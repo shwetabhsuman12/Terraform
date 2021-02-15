@@ -11,5 +11,5 @@ RUN apt-get update && \
     apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" && \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y terraform
-RUN terraform -version
+RUN terraform -install-autocomplete
     

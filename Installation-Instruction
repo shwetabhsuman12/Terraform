@@ -7,3 +7,7 @@
             
             sudo apt-get update && sudo apt-get install terraform
 
+
+# IDE used for development:
+        Terra Architect  Eclipse plugin.
+
