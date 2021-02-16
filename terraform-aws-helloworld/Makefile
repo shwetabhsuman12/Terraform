@@ -1,17 +1,21 @@
 init:
 	@echo "terraform initialise..."
-	terraform init
+	terraform -chdir=tfs init
 	@echo "terraform formatting.."
-	terraform fmt
+	terraform -chdir=tfs fmt
 
 validate:
 	@echo "terraform validate..."
-	terraform validate
+	terraform -chdir=tfs validate
 
 apply:
 	@echo "terraform apply..."
-	terraform apply
+	terraform -chdir=tfs apply
 
 show:
 	@echo "terraform show..."
-	terraform show	
+	terraform -chdir=tfs show
+
+destroy:
+	@echo "terraform destroy..."
+	terraform -chdir=tfs destroy	

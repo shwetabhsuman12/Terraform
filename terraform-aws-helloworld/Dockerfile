@@ -5,3 +5,5 @@ RUN apt-get update && \
 WORKDIR src
 RUN mkdir terraform-aws-ubuntu
 COPY . ./terraform-aws-ubuntu
+WORKDIR terraform-aws-ubuntu
+RUN make init
